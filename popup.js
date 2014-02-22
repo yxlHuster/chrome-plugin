@@ -43,5 +43,5 @@ function clickHandler(su, tid) {
 		}
 	});
 	var lid = 'label-' + tid;
-	alert(document.getElementById(lid).getElementsByTagName("a").innerHTML);
+	／／alert(document.getElementById(lid).getElementsByTagName("a").innerHTML);
 }
