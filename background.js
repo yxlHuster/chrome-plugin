@@ -9,7 +9,7 @@
 	return host;
 }
 
-function checkForValidUrl(tabId, changeInfo, tab) {
+function checkValidUrl(tabId, changeInfo, tab) {
 	chrome.pageAction.show(tabId);
 /*
 	if(getDomainFromUrl(tab.url).toLowerCase() == "www.sohu.com"){
@@ -18,7 +18,7 @@ function checkForValidUrl(tabId, changeInfo, tab) {
 	*/
 };
 
-chrome.tabs.onUpdated.addListener(checkForValidUrl);
+chrome.tabs.onUpdated.addListener(checkValidUrl);
 
 var newsItem = {};
 newsItem.error = "加载中...";
