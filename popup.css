@@ -1,0 +1,46 @@
+﻿body {
+	margin:0px;
+	width: 400px;
+	font-size: 12px;
+}
+
+.rss  {
+    margin: 0px 0px 0px 0px;
+    padding: 1px 1px 1px 1px;
+    width: 398px;
+    height: 400px;
+
+}
+
+ul {
+    position: relative;
+    top: 0px; 
+    margin: 1px;
+    padding: 1px;
+	list-style-type:none;
+}
+
+li {
+	margin: 2px;	
+	padding: 5px 0px;
+	width: 394px;
+	float: left;
+}
+
+li a{
+	float:left;
+	text-decoration:none;
+}
+
+li a:hover{
+	text-decoration:underline;
+}
+li span a{
+	float:right;
+	text-decoration:none;
+	color:#0f659e;
+}
+li span a:hover{
+	text-decoration:underline;
+	color:red;
+}
