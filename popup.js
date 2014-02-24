@@ -28,7 +28,7 @@
 			{
 				var item = feeds[i];
 				var lid = 'label-' + item.id;
-				document.getElementById(lid).addEventListener('click', function(){clickHandler(data.url, item.id);});
+				document.getElementById(lid).addEventListener('click', clickEvent, false);
 			}
 	}
 });
@@ -43,5 +43,14 @@ function clickHandler(su, tid) {
 		}
 	});
 	var lid = 'label-' + tid;
-	／／alert(document.getElementById(lid).getElementsByTagName("a").innerHTML);
+	document.getElementById(lid).firstChild.innerHTML = '不靠谱';
+};
+
+function clickEvent(e) {
+	var tid = e.target.getAttribute('id');
+	var data = chrome.extension.getBackgroundPage().newsItem;
+	var su = data.url;
+	if (su) {
+		clickHandler(su, tid);
+	}
 }
