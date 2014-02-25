@@ -16,7 +16,7 @@
                     + '<a href="'
                     + item.url
                     + '">'
-                    + item.title
+                    + item.title + '---' + item.type
                     + '</a>';
                 htmlLi += "</li>";               
                 var li = $(htmlLi);
